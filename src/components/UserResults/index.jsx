@@ -52,15 +52,6 @@ class UserResults extends Component {
       </div>
       
       <div className="usersList">
-      {/* {gitUsers &&
-        gitUsers.map(u => {
-            return (
-                <div key={u.id} className="card--content">
-      <img src={u.avatar_url}/>
-                </div>
-            )
-        })
-      } */}
       {gitUsers &&
       <List>
       {gitUsers.map(u => {
@@ -78,10 +69,10 @@ class UserResults extends Component {
               Score: {u.score}
               </Typography>
               <span style={{display: 'flex', flexDirection: 'row', justifyContent:'space-between', width: '50%'}}>
-              <Button variant="contained" href={u.html_url} className={classes.button}>
+              <Button variant="contained" target="__blank" href={u.html_url} className={classes.button}>
                 Profile
               </Button>
-              <Button variant="contained" href={`/details/${u.login}`} className={classes.button}>
+              <Button variant="contained"  href={`/details/${u.login}`} className={classes.button}>
                 Details
               </Button>
               </span>

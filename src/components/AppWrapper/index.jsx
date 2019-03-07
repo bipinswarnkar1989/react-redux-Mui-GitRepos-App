@@ -38,6 +38,9 @@ class Appwrapper extends Component {
     })
     this.props.history.listen(location => {
       console.log(location.pathname) // /home
+      this.setState({
+        routePath:location.pathname
+      })
     })
   }
   goBack(){
