@@ -1,0 +1,12 @@
+  .Loader{
+    display: block;
+    text-align: center;
+  }
+  .usersList{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .reasultsDiv{
+    text-align: center;
+  }
